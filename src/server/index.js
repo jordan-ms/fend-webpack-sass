@@ -5,6 +5,10 @@ const mockAPIResponse = require('./mockAPI.js');
 const app = express();
 
 app.use(express.static('dist'));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
 
 console.log(__dirname);
 
