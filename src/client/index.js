@@ -1,5 +1,6 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
+import { getZipCodeWeather } from './js/getWeather'
 import './styles/base.scss'
 import './styles/footer.scss'
 import './styles/form.scss'
@@ -12,5 +13,6 @@ console.log("CHANGE!!");
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    getZipCodeWeather
 }
